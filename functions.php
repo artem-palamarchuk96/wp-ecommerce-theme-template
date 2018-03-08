@@ -155,7 +155,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Add custom dependencies such as plugins.
  */
-require get_template_directory() . '/tgm/example.php';
+require get_template_directory() . '/tgm/config-deps.php';
 
 /**
  * Load Jetpack compatibility file.
