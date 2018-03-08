@@ -26,7 +26,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Woocommerce', // The plugin name.
 			'slug'               => 'woocommerce.v3.3.3', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/dependencies/woocommerce.v3.3.3', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/dependencies/woocommerce.v3.3.3.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '3.3.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -38,7 +38,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'WP-SCSS', // The plugin name.
 			'slug'               => 'wp-scss.v1.2.3', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/dependencies/wp-scss.v1.2.3', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/dependencies/wp-scss.v1.2.3.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '1.2.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -50,7 +50,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'WC Fields Factory', // The plugin name.
 			'slug'               => 'wc-fields-factory.v2.0.6', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/dependencies/wc-fields-factory.v2.0.6', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/dependencies/wc-fields-factory.v2.0.6.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '2.0.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
