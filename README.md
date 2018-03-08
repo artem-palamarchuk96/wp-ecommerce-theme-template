@@ -1,1 +1,2 @@
-# wp-theme-template
+# Notes
+- Theme template based on underscores template
