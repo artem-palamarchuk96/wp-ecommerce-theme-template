@@ -36,42 +36,45 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<div class="product__product_wrap">
-	<div class="product__left_side">
-		<?php
-			/**
-			 * Hook: woocommerce_before_single_product_summary.
-			 *
-			 * @hooked woocommerce_show_product_sale_flash - 10
-			 * @hooked woocommerce_show_product_images - 20
-			 */
-			do_action( 'woocommerce_before_single_product_summary' );
-		?>
-	</div>
-	
-	<div class="product__right_side">
-		<div class="summary entry-summary">
-			<?php
-				/**
-				 * Hook: Woocommerce_single_product_summary.
-				 *
-				 * @hooked woocommerce_template_single_title - 5
-				 * @hooked woocommerce_template_single_rating - 10
-				 * @hooked woocommerce_template_single_price - 10
-				 * @hooked woocommerce_template_single_excerpt - 20
-				 * @hooked woocommerce_template_single_add_to_cart - 30
-				 * @hooked woocommerce_template_single_meta - 40
-				 * @hooked woocommerce_template_single_sharing - 50
-				 * @hooked WC_Structured_Data::generate_product_data() - 60
-				 */
-				do_action( 'woocommerce_single_product_summary' );
-				do_action( 'woocommerce_product_additional_information', $product );
-			?>
+<div class="fw-page-builder-content">
+	<section class="fw-main-row ">
+		<div class="fw-container">
+			<div class="fw-row">
+				<div class="fw-col-xs-12 fw-col-sm-6 product__left_side">
+					<?php
+					/**
+					 * Hook: woocommerce_before_single_product_summary.
+					 *
+					 * @hooked woocommerce_show_product_sale_flash - 10
+					 * @hooked woocommerce_show_product_images - 20
+					 */
+					do_action( 'woocommerce_before_single_product_summary' );
+					?>
+				</div>
+				<div class="fw-col-xs-12 fw-col-sm-6 product__right_side">
+					<div class="summary entry-summary">
+						<?php
+							/**
+							 * Hook: Woocommerce_single_product_summary.
+							 *
+							 * @hooked woocommerce_template_single_title - 5
+							 * @hooked woocommerce_template_single_rating - 10
+							 * @hooked woocommerce_template_single_price - 10
+							 * @hooked woocommerce_template_single_excerpt - 20
+							 * @hooked woocommerce_template_single_add_to_cart - 30
+							 * @hooked woocommerce_template_single_meta - 40
+							 * @hooked woocommerce_template_single_sharing - 50
+							 * @hooked WC_Structured_Data::generate_product_data() - 60
+							 */
+							do_action( 'woocommerce_single_product_summary' );
+							do_action( 'woocommerce_product_additional_information', $product );
+						?>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-	
-
+	</section>
+</div>	
 	<?php
 		/**
 		 * Hook: woocommerce_after_single_product_summary.

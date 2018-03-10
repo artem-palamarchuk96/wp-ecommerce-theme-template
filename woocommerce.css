@@ -251,12 +251,6 @@
 
  .product__product_wrap { display:flex; justify-content:space-between; }
 
- .product__left_side { width:50%; }
-
- .product__left_side .product-slick { height:400px; }
-
- .product__left_side .product-slick-nav { height:150px; }
-
  .product__left_side .product-slick-nav .slider-img-wrap { padding:10px; }
 
  .product__left_side .slick-list { height:100%; }
@@ -266,6 +260,4 @@
  .product__left_side .slider-img-wrap { height:100%; }
 
  .product__left_side .slider-image { width:100%; height:100%; }
-
- .product__right_side { width:50%; }
 
