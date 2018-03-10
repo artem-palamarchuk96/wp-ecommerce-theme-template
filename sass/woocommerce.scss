@@ -47,36 +47,54 @@ $woocommerce__color-info: #3D9CD2;
  */
 @import "shop/widgets";
 
+.custom__product-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	p {
+		margin: 0;
+	}
+}
+
 .product__product_wrap {
 	display: flex;
 	justify-content: space-between;
 }
 
 .product__left_side {
-	width: 50%;
-}
+    width: 50%;
+    
+    .product-slick {
+        height: 400px;
+    }
 
-.slider-img-wrap {
-    padding: 10px;
-    height: 100%;
-}
+    .product-slick-nav {
+        height: 150px;
 
-.product__right_side {
-	width: 50%;
-}
-
-.product-slick-nav {
-    height: 180px;
+        .slider-img-wrap {
+            padding: 10px;
+        }
+    }
 
     .slick-list {
         height: 100%;
     }
+
+    .slick-track {
+        height: 100%;
+    }
+
+    .slider-img-wrap {
+        height: 100%;
+    }
+
+    .slider-image {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.product-slick-nav .slick-list .slick-track {
-	height: 100%;
-}
-
-.product-slick-nav .slick-list .slick-track .slider-image {
-	height: 100%;
+.product__right_side {
+	width: 50%;
 }

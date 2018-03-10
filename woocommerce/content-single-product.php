@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 				 * @hooked WC_Structured_Data::generate_product_data() - 60
 				 */
 				do_action( 'woocommerce_single_product_summary' );
-				// do_action( 'woocommerce_product_additional_information', $product );
+				do_action( 'woocommerce_product_additional_information', $product );
 			?>
 		</div>
 	</div>

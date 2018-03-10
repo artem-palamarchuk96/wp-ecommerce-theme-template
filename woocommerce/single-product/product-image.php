@@ -32,14 +32,12 @@ $post_thumbnail_id = $product->get_image_id();
 		$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 		$html .= '</div>';
 	}
-
-	// echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
 	
 	do_action( 'woocommerce_product_thumbnails' );
 	?>
 </div>
 
-<div class="product-slick-nav" style="height: 180px;">
+<div class="product-slick-nav">
 	<?php
 	if ( has_post_thumbnail() ) {
 		$html  = custom_get_gallery_image_html( $post_thumbnail_id, true );
@@ -48,8 +46,6 @@ $post_thumbnail_id = $product->get_image_id();
 		$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 		$html .= '</div>';
 	}
-
-	// echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
 	
 	do_action( 'woocommerce_product_thumbnails' );
 	?>

@@ -245,19 +245,27 @@
 
  .widget_price_filter .ui-slider-horizontal .ui-slider-range { height:100%; }
 
+ .custom__product-info { display:flex; align-items:center; justify-content:space-around; }
+
+ .custom__product-info p { margin:0; }
+
  .product__product_wrap { display:flex; justify-content:space-between; }
 
  .product__left_side { width:50%; }
 
- .slider-img-wrap { padding:10px; height:100%; }
+ .product__left_side .product-slick { height:400px; }
+
+ .product__left_side .product-slick-nav { height:150px; }
+
+ .product__left_side .product-slick-nav .slider-img-wrap { padding:10px; }
+
+ .product__left_side .slick-list { height:100%; }
+
+ .product__left_side .slick-track { height:100%; }
+
+ .product__left_side .slider-img-wrap { height:100%; }
+
+ .product__left_side .slider-image { width:100%; height:100%; }
 
  .product__right_side { width:50%; }
-
- .product-slick-nav { height:180px; }
-
- .product-slick-nav .slick-list { height:100%; }
-
- .product-slick-nav .slick-list .slick-track { height:100%; }
-
- .product-slick-nav .slick-list .slick-track .slider-image { height:100%; }
 
