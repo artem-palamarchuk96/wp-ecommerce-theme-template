@@ -170,3 +170,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+add_action('init', 'custom_libs', 0);
+add_action('init', 'custom_scripts', 10);
+
+function custom_scripts() {
+	wp_enqueue_script('product-slider-init', get_template_directory_uri() . '/js/slider-init.js');
+}
+
+function custom_libs() {
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.0.min.js');
+	wp_enqueue_script('slick_slider', get_template_directory_uri() . '/libs/slick/slick.min.js');
+	wp_enqueue_style('slick_slider', get_template_directory_uri() . '/libs/slick/slick.css');
+	wp_enqueue_style('slick_slider_theme', get_template_directory_uri() . '/libs/slick/slick-theme.css');
+}
