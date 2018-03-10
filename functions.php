@@ -185,3 +185,8 @@ function custom_libs() {
 	wp_enqueue_style('slick_slider', get_template_directory_uri() . '/libs/slick/slick.css');
 	wp_enqueue_style('slick_slider_theme', get_template_directory_uri() . '/libs/slick/slick-theme.css');
 }
+
+function custom_get_gallery_image_html( $attachment_id ) {
+	$full_size = apply_filters( 'woocommerce_gallery_full_size', apply_filters( 'woocommerce_product_thumbnails_large_size', 'full' ) );
+	return '<div><div style="padding: 10px; height: 100%;"><img class="slider-image" src="' . wp_get_attachment_image_src($attachment_id, $full_size)[0] .'"></div></div>';
+}

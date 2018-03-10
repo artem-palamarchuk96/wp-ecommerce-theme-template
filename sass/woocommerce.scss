@@ -46,3 +46,37 @@ $woocommerce__color-info: #3D9CD2;
  * WooCommerce widgets
  */
 @import "shop/widgets";
+
+.product__product_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product__left_side {
+	width: 50%;
+}
+
+.slider-img-wrap {
+    padding: 10px;
+    height: 100%;
+}
+
+.product__right_side {
+	width: 50%;
+}
+
+.product-slick-nav {
+    height: 180px;
+
+    .slick-list {
+        height: 100%;
+    }
+}
+
+.product-slick-nav .slick-list .slick-track {
+	height: 100%;
+}
+
+.product-slick-nav .slick-list .slick-track .slider-image {
+	height: 100%;
+}
