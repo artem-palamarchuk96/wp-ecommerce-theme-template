@@ -36,5 +36,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar(); for not showing filter anywhere commented here
 get_footer();
